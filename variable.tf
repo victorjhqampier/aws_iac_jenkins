@@ -1,30 +1,60 @@
+#Backend credentials/roles
+variable "backend_aws_region"{
+    type = string
+    description = "Region donde está el backend"
+    sensitive = false
+}
+variable "backend_aws_access_key"{
+    type = string
+    description = "access key para el backend"
+    sensitive = true
+}
+variable "backend_aws_secret_key"{
+    type = string
+    description = "secret key para el backend"
+    sensitive = true
+}
+
+# AWS Credentials/roles
+variable "iac_aws_region"{
+    type = string
+    description = "Region donde se desplegará la infra"
+    sensitive = false
+}
+variable "iac_aws_access_key"{
+    type = string
+    description = "access key donde se desplegará la infra"
+    sensitive = true
+}
+variable "iac_aws_secret_key"{
+    type = string
+    description = "secret key donde se desplegará la infra"
+    sensitive = true
+}
+
 #Variables obligatorios
 variable "aws_project_id"{
     type = string
     description = "Nombre del proyecto"
+    sensitive = false
 }
 variable "aws_project_env"{
     type = string
     description = "Ambiente del proyecto"
+    sensitive = false
 }
 variable "aws_project_account"{
     type = string
     description = "Nombre de la cuenta"
+    sensitive = false
 }
-#variables para applicaciones
-variable "aws_account_id"{
+variable "aws_account_origin"{
     type = string
-    description = "ID cuenta AWS"
+    description = "Nombre de cuenta que creó la infraestructura"
+    sensitive = false
 }
-variable "s3_cloudfront_boton_name"{
+variable "aws_account_target"{
     type = string
-    description = "Nombre de cloudFront de Boton de pagos"
-}
-variable "s3_cloudfront_boton_price_class"{
-    type = string
-    description = "Precio de cloudFront de Boton de pagos"
-}
-variable "s3_cloudfront_boton_root_object"{
-    type = string
-    description = "Etiqueta del proyecto"
+    description = "Nombre de cuenta dónde se aprovisionó la infraestructura"
+    sensitive = false
 }
