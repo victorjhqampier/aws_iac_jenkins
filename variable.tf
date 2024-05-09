@@ -1,20 +1,3 @@
-#Backend credentials/roles
-variable "backend_aws_region"{
-    type = string
-    description = "Region donde está el backend"
-    sensitive = false
-}
-variable "backend_aws_access_key"{
-    type = string
-    description = "access key para el backend"
-    sensitive = true
-}
-variable "backend_aws_secret_key"{
-    type = string
-    description = "secret key para el backend"
-    sensitive = true
-}
-
 # AWS Credentials/roles
 variable "iac_aws_region"{
     type = string

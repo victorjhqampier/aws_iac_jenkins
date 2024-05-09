@@ -1,8 +1,0 @@
-iac_aws_region="us-east-1"
-iac_aws_access_key=""
-iac_aws_secret_key=""
-aws_project_id="iacdevops"
-aws_project_env="develop"
-aws_project_account="integrat-dev"
-aws_account_origin="devops"
-aws_account_target="integrations-dev"

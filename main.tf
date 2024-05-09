@@ -1,7 +1,7 @@
 provider "aws" {
-  region = ""
-  access_key = ""
-  secret_key = ""
+  region = var.iac_aws_region
+  access_key = var.iac_aws_access_key
+  secret_key = var.iac_aws_secret_key
 }
 
 module "s3" {
