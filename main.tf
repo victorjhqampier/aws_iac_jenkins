@@ -12,11 +12,11 @@ provider "aws" {
 #   aws_project_account = var.aws_project_account
 # }
 
- module "vpc" {
-  source = "git::https://github.com/jesuselvis/vpc-module.git"#no cambiar
-  vpc_cidr_block = "10.0.0.0/16"
-  subnet_cidr_block_pub = ["10.0.1.0/24"] #you can add two more subnets
-  subnet_cidr_block_priv = ["10.0.2.0/24"]
-  name = "vpc-main"
-  azs = [ "us-east-1a"]
-}
+#  module "vpc" {
+#   source = "git::https://github.com/jesuselvis/vpc-module.git"#no cambiar
+#   vpc_cidr_block = "10.0.0.0/16"
+#   subnet_cidr_block_pub = ["10.0.1.0/24"] #you can add two more subnets
+#   subnet_cidr_block_priv = ["10.0.2.0/24"]
+#   name = "vpc-main"
+#   azs = [ "us-east-1a"]
+# }
